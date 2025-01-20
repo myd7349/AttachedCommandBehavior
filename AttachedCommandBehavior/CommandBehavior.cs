@@ -182,9 +182,9 @@ namespace AttachedCommandBehavior
             if (binding.Event != null && binding.Owner != null)
                 binding.Dispose();
 
-            //if (string.IsNullOrEmpty((string)e.NewValue))
+            if (string.IsNullOrEmpty((string)e.NewValue))
 
-            //    return;
+                return;
 
             //bind the new event to the command
             binding.BindEvent(d, e.NewValue.ToString());
