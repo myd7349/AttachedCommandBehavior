@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <!-- SourceLink related properties https://github.com/dotnet/SourceLink#using-sourcelink -->
@@ -12,13 +12,13 @@
     <IncludeSymbols>true</IncludeSymbols>
     <SymbolPackageFormat>snupkg</SymbolPackageFormat>
     
-    <TargetFrameworks>net4;net472;net48;netcoreapp3.0;netcoreapp3.1</TargetFrameworks>
+    <TargetFrameworks>net4;net472;net48;netcoreapp3.0;netcoreapp3.1;net6.0-windows;net8.0-windows;net9.0-windows</TargetFrameworks>
     <UseWPF>true</UseWPF>
     <AssemblyName>AttachedCommandBehavior</AssemblyName>
-    <PackageId>WinCopies.AttachedCommandBehavior</PackageId>
+    <PackageId>AttachedCommandBehavior.Wpf</PackageId>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
-    <Version>3.1.0.2</Version>
+    <Version>3.1.0.3</Version>
     <SignAssembly>true</SignAssembly>
     <AssemblyOriginatorKeyFile>WinCopies.AttachedCommandBehavior.snk</AssemblyOriginatorKeyFile>
     <DocumentationFile>WinCopies.AttachedCommandBehavior.xml</DocumentationFile>
@@ -28,11 +28,10 @@
     <Company>Pierre Sprimont</Company>
     <Copyright>Copyright © Marlon Grech 2008, Copyright © Christian Moser 2011, Copyright © Pierre Sprimont 2020</Copyright>
     <PackageLicenseFile>LICENSE</PackageLicenseFile>
-    <PackageProjectUrl>https://github.com/pierresprim/AttachedCommandBehavior</PackageProjectUrl>
-    <RepositoryUrl>https://github.com/pierresprim/AttachedCommandBehavior.git</RepositoryUrl>
+    <PackageProjectUrl>https://github.com/myd7349/AttachedCommandBehavior</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/myd7349/AttachedCommandBehavior.git</RepositoryUrl>
     <RepositoryType>Git</RepositoryType>
     <PackageTags>AttachedCommandBehavior, WPF, Commands</PackageTags>
-    <PackageReleaseNotes>See https://github.com/pierresprim/AttachedCommandBehavior/blob/master/Changelog.md</PackageReleaseNotes>
   </PropertyGroup>
 
   <ItemGroup>
@@ -51,6 +50,8 @@
       <Pack>True</Pack>
       <PackagePath></PackagePath>
     </None>
+
+    <None Include="..\README.md" Pack="true" PackagePath="/" />
   </ItemGroup>
 
 </Project>
