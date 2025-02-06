@@ -27,6 +27,7 @@
     <Product>AttachedCommandBehavior</Product>
     <Company>Pierre Sprimont</Company>
     <Copyright>Copyright © Marlon Grech 2008, Copyright © Christian Moser 2011, Copyright © Pierre Sprimont 2020</Copyright>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
     <PackageLicenseFile>LICENSE</PackageLicenseFile>
     <PackageProjectUrl>https://github.com/myd7349/AttachedCommandBehavior</PackageProjectUrl>
     <RepositoryUrl>https://github.com/myd7349/AttachedCommandBehavior.git</RepositoryUrl>
@@ -51,7 +52,7 @@
       <PackagePath></PackagePath>
     </None>
 
-    <None Include="..\README.md" Pack="true" PackagePath="/" />
+    <None Include="..\README.md" Pack="true" PackagePath="\" />
   </ItemGroup>
 
 </Project>
